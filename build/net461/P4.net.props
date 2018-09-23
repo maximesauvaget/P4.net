@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup>
+    <ContentWithTargetPath 
+      Include="$(MSBuildThisFileDirectory)\..\..\runtimes\win-x64\native\p4bridge.dll">
+      <TargetPath>lib\win-x64\native\p4bridge.dll</TargetPath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath 
+      Include="$(MSBuildThisFileDirectory)\..\..\runtimes\win-x64\native\p4bridge.pdb">
+      <TargetPath>lib\win-x64\native\p4bridge.pd</TargetPath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </ContentWithTargetPath>
+  </ItemGroup>
+</Project>
